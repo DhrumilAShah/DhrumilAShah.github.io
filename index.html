@@ -1,8 +1,109 @@
 <html>
   <head>
-    <title>Body bgcolor Attribute example</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body bgcolor="#EDEDED">
-    <h1>Hellooo</h1>
+
+  <style>
+  body {
+    margin: 0;
+    font:normal 80%  sans-serif, Helvetica, Arial;
+    color: #585858;
+  }
+  /* canvas {
+    display: block;
+    vertical-align: bottom;
+  } */
+    /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  div.intro {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width:35em;
+    /* transform: translateX(-40%) translateY(-15%); */
+  }
+
+  .fa {
+    padding: 15px 20px 20px 0px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    color: #404040;
+  }
+
+  .fa-github, .fa-linkedin, .fa-envelope, .fa-file{
+   color: #585858;
+  }
+
+  .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  .name{
+    font-size: 40px;
+    color: #404040;
+  }
+  div.image{
+    position: relative;
+    display: block;
+    margin : 0px;
+    top: 15%;
+    bottom:0px;
+    left:60%;
+    height: 600px;
+    width: 300px;
+  }
+
+
+  </style>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="intro">
+        <h1>Hello!<br>
+		    <div class="name">I AM DHRUMIL</div><br>
+        A <span class="element"></span><span class="typed-cursor">|</span></h1>
+    <br>
+    <div class="links">
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-envelope"></a>
+      <a href="#" class="fa fa-file"></a>
+    </div>
+    <br>
+    </div>
+    <div class="image">
+      <img src="img6.jpg" height="620px" width="275px">
+    </div>
   </body>
+
+  <script src="particles.min.js"></script>
+  <script src="particles.js"></script>
+  <script src="typed.min.js"></script>
+  <script src="typed.js"></script>
 </html>
